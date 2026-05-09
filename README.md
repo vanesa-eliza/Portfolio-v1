@@ -1,4 +1,4 @@
-# VEChetrusca-Phase2
+# Personal portfolio website
 
 A personal portfolio website with an integrated blog system. Built with PHP, MySQL, HTML, CSS, and JavaScript, and designed to be hosted locally via XAMPP.
 
@@ -50,13 +50,13 @@ Clone this repo into XAMPP's `htdocs` folder.
 **On macOS:**
 ```bash
 cd /Applications/XAMPP/xamppfiles/htdocs/
-git clone https://github.com/YOUR_USERNAME/VEChetrusca-Phase2.git
+git clone https://github.com/vanesa-eliza/Portfolio-v1
 ```
 
 **On Windows:**
 ```bash
 cd C:\xampp\htdocs\
-git clone https://github.com/YOUR_USERNAME/VEChetrusca-Phase2.git
+git clone https://github.com/vanesa-eliza/Portfolio-v1
 ```
 
 ### 2. Start XAMPP
