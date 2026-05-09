@@ -1,0 +1,155 @@
+/*main*/
+body{
+    background-image: url(../images/projectBackG.jpg);
+    background-size: contain;
+    image-rendering: auto;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: clamp(3rem,4vw,5rem);
+    margin: clamp(4rem,7vw,10rem);
+    margin-top: 15%;
+}
+
+/* article */
+article{
+    margin-bottom: 3vh;
+    background-color: rgba(73, 73, 73, 0.378);
+    padding: 2vw;
+    margin: 2vw;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: fit-content;
+    gap: 2vw;
+    box-sizing: border-box;
+    color: white;
+    backdrop-filter: blur(0.1rem);
+    border: 1px solid rgba(0, 0, 0, 0.242);
+}
+
+article h2{
+    grid-column: span 2;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    margin-bottom: 1vw;
+}
+
+article section{
+    min-width: fit-content;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+}
+
+article section h3{
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+}
+
+article section p{
+    padding: 1vw;
+    background-color: rgba(167, 170, 174, 0.434);
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    min-width: fit-content;
+    min-height: fit-content;
+    width: auto;
+}
+
+/*carousel images displayed */
+.carouselContainer{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: fit-content;
+    height: fit-content;
+    min-height: fit-content;
+    overflow: hidden;
+    position: relative; /*for the buttons to be displayed properly*/
+    box-shadow: 0 4px 6px rgba(84, 107, 136, 0.649);
+}
+
+.carousel{
+    display: flex;
+    width: 100%;
+    transition: transform 0s ease-in-out;
+}
+
+.carousel figure{
+    min-width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+}
+
+.carousel figure figcaption{
+    text-align: center;
+    color: black;
+}
+
+.carousel img{
+    width: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+}
+
+.buttons{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* to center the buttons vertically */
+    z-index: 1;
+}
+
+.buttons button{
+    height: 5rem;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    background-color: rgba(105, 110, 114, 0.539);
+}
+.button-right{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.button-left{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.buttons button:hover{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+
+    article section,
+    .carouselContainer {
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel img {
+        height: auto;
+        object-fit: cover;
+    }
+}

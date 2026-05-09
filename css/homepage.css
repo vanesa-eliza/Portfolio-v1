@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Quintessential&family=Vibur&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+body{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* main */
+.homepage{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    border-bottom: solid 1vh rgba(30, 38, 55, 0.669);
+    height: 55rem;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainContainer h1{
+    font-size: clamp(2rem,4.5vw,5.5rem);
+    font-family: "Charm", serif;
+    color: aliceblue;
+}
+
+.mainContainer p{
+    font-size: clamp(1.5rem,2vw,3rem);
+    font-family: "Charm", serif;
+    color: aliceblue;
+}
+
+.mainContainer button{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(2rem,2.5vw,3.5rem);
+    padding: 0.5rem;
+    background-color: rgba(61, 60, 60, 0.811);
+}
+
+.mainContainer div{
+    display: flex;
+    gap:1vw;
+    margin-top: 2rem;
+}
+
+.mainContainer button:hover{
+    background-color: rgb(127, 126, 126);
+}
+
+@media screen and (max-width: 768px) {
+    .homepage {
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+        text-align: start;
+        height: fit-content;
+    }
+
+    .mainContainer {
+        padding: 2rem 2rem;
+        gap: 1rem;
+        margin-left: 1rem;
+        background-color: rgba(128, 128, 128, 0.341);
+        backdrop-filter: blur(5px);
+        border-radius: 0.25rem;
+        width: fit-content;
+        
+    }
+
+    .mainContainer div {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .mainContainer button{
+        font-size: 3vw;
+    }
+}

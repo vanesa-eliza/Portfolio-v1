@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Quintessential&family=Vibur&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+/*aboutme*/
+.aboutMeContainer h2{
+    font-size: clamp(2.5rem,3vw,5rem);
+    font-family: "Charm", serif;
+    padding-top: 5rem;
+}
+
+.aboutMeContainer{
+    background-image: url(../images/aboutme-backg.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 3rem;
+    padding: 2vw;
+    border-bottom: solid 1vh rgba(30, 38, 55, 0.669);
+    font-family: "IM Fell Great Primer", serif;
+}
+
+.aboutMeContainer hr{
+    width: 7cm;
+}
+
+
+.aboutMeContainer p{
+    font-size: clamp(1rem,1vw,1.5rem);
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.paragraphContainer p{
+    font-size: clamp(1.2rem,2vw,2rem);
+    text-align: left;
+    text-indent: 2rem;
+    
+}
+
+/*figure of me*/
+.aboutMeContainer figure{
+    width: 25vw;
+    height: auto;
+    min-width: fit-content;
+    padding-top: 6rem;
+}
+
+.aboutMeContainer figure img{
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 2vw;
+}
+
+.aboutMeContainer figure figcaption{
+    text-align: center;
+    font-family: "IM Fell Great Primer", serif;
+    font-size: clamp(1rem,1.5vw,2rem);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .aboutMeContainer {
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4vw;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .myImage{
+        order: 2;
+        width: 100%;
+    }
+
+    .aboutMe {
+        order: 1;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .aboutMeContainer figure {
+        width: 60%;
+        max-width: 200px;
+        height: auto;
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+
+    .aboutMeContainer figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+    }
+
+    .aboutMeContainer figure figcaption {
+        background-color: rgba(73, 73, 73, 0.446);
+        border-radius: 0.2rem;
+        padding: 1vw;
+        margin: 1vw;
+    }
+
+    .aboutMeContainer p {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+    }
+
+    .paragraphContainer p {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+        text-align: left;
+    }
+
+  }

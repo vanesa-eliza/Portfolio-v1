@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Quintessential&family=Vibur&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+body{
+    background-image: url(../images/blogFormBackground.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.glass{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    min-height: fit-content;
+    margin-bottom: 0.5rem;
+    margin-top: min(40vh, 9rem);
+}
+
+.blogFormContainer{
+    width: 50vw;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: rgba(128, 128, 128, 0.283);
+    padding: 0.5vw;
+    border-radius: 0.25rem;
+}
+
+.blogFormContainer h1{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    padding-top: 1vw;
+}
+
+.blogFormContainer input[type="text"], .blogFormContainer textarea{
+    width: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-indent: 0.3vw;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(128, 128, 128, 0.504);
+    box-sizing: border-box;
+}
+
+.blogFormContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.blogFormContainer div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blogFormContainer button, aside button{
+    border: 1px solid rgba(255, 255, 255, 0.347);
+    background-color: transparent;
+    border-radius: 0.25rem;
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
+    margin: 0.5rem;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+}
+
+.postBox{
+    height: 14rem;
+}
+
+aside{
+    text-align: end;
+    width: 59vw;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.229);
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+
+button:hover{
+    color: rgba(197, 211, 223, 0.896);
+}
