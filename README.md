@@ -101,7 +101,7 @@ INSERT INTO users (email, password) VALUES ('your@email.com', 'yourpassword');
 
 ### 5. Run the site
 
-Visit [http://localhost/VEChetrusca-Phase2](http://localhost/VEChetrusca-Phase2) in your browser.
+Visit [http://localhost/Portfolio-v1](http://localhost/Portfolio-v1) in your browser.
 
 To access the blog admin area, go to `/login.php` and use the credentials you created.
 
